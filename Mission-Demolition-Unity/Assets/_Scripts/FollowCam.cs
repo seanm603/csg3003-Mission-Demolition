@@ -24,11 +24,9 @@ public class FollowCam : MonoBehaviour
 
         if (POI != null)
         {
-            Debug.Log("Getting POI rigidbody");
             Rigidbody poiRigid = POI.GetComponent<Rigidbody>();
             if ( (poiRigid != null) && (poiRigid.IsSleeping()))
             {
-                Debug.Log("FC: Projectile stopped, returning to slingshot");
                 POI = null;
             }
         }

@@ -24,8 +24,6 @@ public class CloudCover : MonoBehaviour
             sRend = cloudGO.AddComponent<SpriteRenderer>();
 
             int spriteNum = Random.Range(0, cloudSprites.Length);
-            Debug.Log("CC: spriteNum = " + spriteNum);
-            Debug.Log("CC: cloudSprites.Length = " + cloudSprites.Length);
             sRend.sprite = cloudSprites[spriteNum];
 
             cloudTrans.position = RandomPos();
